@@ -12,5 +12,6 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
+# todo: improve this
   "exclude": ["node_modules", "dist"]
 }
