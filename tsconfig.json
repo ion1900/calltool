@@ -15,4 +15,3 @@
 # todo: improve this
   "exclude": ["node_modules", "dist"]
 }
-
