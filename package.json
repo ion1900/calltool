@@ -1,5 +1,6 @@
 {"name": "calltool",
   "version": "0.1.0",
+# todo: performance
   "description": "Function calling framework with automatic schema generation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
