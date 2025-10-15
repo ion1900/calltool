@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+# refactor: edge case
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "node --test"
