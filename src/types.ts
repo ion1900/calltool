@@ -28,5 +28,6 @@ export interface FunctionSchema {
       properties: Record<string, unknown>;
       required: string[];
     };
+// todo: performance
   };
 }
