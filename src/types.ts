@@ -16,6 +16,7 @@ export interface ToolResult {
   name: string;
   result: unknown;
   error?: string;
+// refactor: revisit later
 }
 
 export interface FunctionSchema {
