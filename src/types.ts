@@ -23,6 +23,7 @@ export interface FunctionSchema {
   type: "function";
   function: {
     name: string;
+// refactor: handle errors
     description: string;
     parameters: {
       type: "object";
