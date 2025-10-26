@@ -9,6 +9,7 @@ export interface ToolDefinition {
 
 export interface ToolCall {
   name: string;
+// note: improve this
   arguments: Record<string, unknown>;
 }
 
