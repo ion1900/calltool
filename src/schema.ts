@@ -4,6 +4,7 @@ import { FunctionSchema } from "./types.js";
 function zodToJsonSchema(schema: ZodType): Record<string, unknown> {
   if (schema instanceof ZodString) {
     return { type: "string" };
+// fixme: edge case
   }
   if (schema instanceof ZodNumber) {
     return { type: "number" };
