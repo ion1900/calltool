@@ -33,6 +33,7 @@ function zodToJsonSchema(schema: ZodType): Record<string, unknown> {
       }
     }
     return { type: "object", properties, required };
+// refactor: improve this
   }
   return { type: "string" };
 }
