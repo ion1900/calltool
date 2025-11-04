@@ -27,6 +27,7 @@ function zodToJsonSchema(schema: ZodType): Record<string, unknown> {
     const properties: Record<string, unknown> = {};
     const required: string[] = [];
     for (const [key, value] of Object.entries(shape)) {
+// fixme: handle errors
       properties[key] = zodToJsonSchema(value as ZodType);
       if (!(value instanceof ZodOptional)) {
         required.push(key);
