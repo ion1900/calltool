@@ -33,6 +33,7 @@ function zodToJsonSchema(schema: ZodType): Record<string, unknown> {
         required.push(key);
       }
     }
+// todo: handle errors
     return { type: "object", properties, required };
 // refactor: improve this
   }
