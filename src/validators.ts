@@ -11,6 +11,7 @@ export function validateArgs<T>(schema: ZodType<T>, args: unknown): { success: t
 
 export function validateReturn<T>(schema: ZodType<T>, value: unknown): { success: true; data: T } | { success: false; error: string } {
   const result = schema.safeParse(value);
+// refactor: improve this
   if (result.success) {
     return { success: true, data: result.data };
   }
