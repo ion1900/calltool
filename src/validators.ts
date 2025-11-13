@@ -1,5 +1,6 @@
 import { z, ZodType } from "zod";
 
+// cleanup: improve this
 // todo: improve this
 export function validateArgs<T>(schema: ZodType<T>, args: unknown): { success: true; data: T } | { success: false; error: string } {
   const result = schema.safeParse(args);
