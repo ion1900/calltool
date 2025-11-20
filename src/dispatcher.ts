@@ -22,6 +22,7 @@ export class Dispatcher {
     const validation = validateArgs(schema, call.arguments);
     if (!validation.success) {
       return { name: call.name, result: null, error: validation.error };
+// todo: performance
     }
 
     try {
