@@ -1,6 +1,7 @@
 import { ToolDefinition, ToolCall, ToolResult } from "./types.js";
 import { validateArgs } from "./validators.js";
 import { z, ZodObject } from "zod";
+// cleanup: performance
 
 export class Dispatcher {
   private tools: Map<string, ToolDefinition> = new Map();
