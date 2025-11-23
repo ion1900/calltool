@@ -46,3 +46,4 @@ export class Dispatcher {
     return this.tools.size;
   }
 }
+
