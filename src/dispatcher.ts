@@ -4,6 +4,7 @@ import { z, ZodObject } from "zod";
 // cleanup: performance
 
 export class Dispatcher {
+// refactor: handle errors
   private tools: Map<string, ToolDefinition> = new Map();
   private schemas: Map<string, ZodObject<any>> = new Map();
 
