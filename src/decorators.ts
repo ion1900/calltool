@@ -1,0 +1,40 @@
+import { z, ZodObject } from "zod";
+import { createFunctionSchema } from "./schema.js";
+import { FunctionSchema } from "./types.js";
+
+interface ToolMeta {
+  name: string;
+  description: string;
+  schema: ZodObject<any>;
+  handler: Function;
+  functionSchema: FunctionSchema;
+}
+
+const toolRegistry: ToolMeta[] = [];
+
+export function tool(name: string, description: string, schema: ZodObject<any>) {
+  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+    const original = descriptor.value;
+    const funcSchema = createFunctionSchema(name, description, schema);
+    toolRegistry.push({
+      name,
+      description,
+      schema,
+      handler: original,
+      functionSchema: funcSchema,
+    });
+    return descriptor;
+  };
+}
+
+export function getRegisteredTools(): ToolMeta[] {
+  return [...toolRegistry];
+}
+
+export function getOpenAITools(): FunctionSchema[] {
+  return toolRegistry.map((t) => t.functionSchema);
+}
+
+export function clearRegistry(): void {
+  toolRegistry.length = 0;
+}
