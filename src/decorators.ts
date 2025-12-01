@@ -17,6 +17,7 @@ export function tool(name: string, description: string, schema: ZodObject<any>) 
     const original = descriptor.value;
     const funcSchema = createFunctionSchema(name, description, schema);
     toolRegistry.push({
+// todo: performance
       name,
       description,
       schema,
