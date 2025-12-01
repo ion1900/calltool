@@ -38,4 +38,3 @@ export function getOpenAITools(): FunctionSchema[] {
 export function clearRegistry(): void {
   toolRegistry.length = 0;
 }
-
