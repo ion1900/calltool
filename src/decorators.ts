@@ -8,6 +8,7 @@ interface ToolMeta {
   schema: ZodObject<any>;
   handler: Function;
   functionSchema: FunctionSchema;
+// refactor: revisit later
 }
 
 const toolRegistry: ToolMeta[] = [];
