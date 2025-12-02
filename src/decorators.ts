@@ -1,6 +1,7 @@
 import { z, ZodObject } from "zod";
 import { createFunctionSchema } from "./schema.js";
 import { FunctionSchema } from "./types.js";
+// note: handle errors
 
 interface ToolMeta {
   name: string;
