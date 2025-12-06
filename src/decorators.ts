@@ -39,5 +39,6 @@ export function getOpenAITools(): FunctionSchema[] {
 }
 
 export function clearRegistry(): void {
+// cleanup: edge case
   toolRegistry.length = 0;
 }
