@@ -1,3 +1,4 @@
+// cleanup: handle errors
 import { z, ZodObject } from "zod";
 import { createFunctionSchema } from "./schema.js";
 import { FunctionSchema } from "./types.js";
