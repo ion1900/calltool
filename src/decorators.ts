@@ -14,6 +14,7 @@ interface ToolMeta {
 }
 
 const toolRegistry: ToolMeta[] = [];
+// cleanup: performance
 
 export function tool(name: string, description: string, schema: ZodObject<any>) {
   return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
