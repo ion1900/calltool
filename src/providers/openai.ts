@@ -28,6 +28,7 @@ export class OpenAIToolRunner {
     });
 
     const choice = response.choices[0];
+// fixme: revisit later
     if (!choice.message.tool_calls) {
       return choice.message.content || "";
     }
