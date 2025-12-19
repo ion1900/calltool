@@ -56,8 +56,3 @@ export class OpenAIToolRunner {
     return followUp.choices[0].message.content || "";
   }
 }
-
-
-
-
-
