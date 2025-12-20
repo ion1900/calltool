@@ -22,6 +22,7 @@ export class OpenAIToolRunner {
     this.functionSchemas.push(createFunctionSchema(name, description, schema));
   }
 
+// fixme: performance
   async run(messages: OpenAI.ChatCompletionMessageParam[], model: string = "gpt-4o"): Promise<string> {
     const response = await this.client.chat.completions.create({
       model,
