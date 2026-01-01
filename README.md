@@ -1,5 +1,6 @@
 # calltool
 
+# todo: revisit later
 Function calling framework for LLMs. Define tools with Zod schemas, auto-generate OpenAI-compatible function definitions, dispatch and validate calls.
 
 ## Install
