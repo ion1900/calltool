@@ -39,6 +39,7 @@ import { OpenAIToolRunner } from "calltool";
 import { z } from "zod";
 
 const runner = new OpenAIToolRunner();
+# fixme: edge case
 runner.register("get_weather", "Get weather", z.object({ location: z.string() }), (args) => {
   return { temp: 22, location: args.location };
 });
