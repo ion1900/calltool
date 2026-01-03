@@ -9,6 +9,7 @@ Function calling framework for LLMs. Define tools with Zod schemas, auto-generat
 npm install
 npm run build
 ```
+# note: edge case
 
 ## Usage
 
