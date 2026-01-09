@@ -36,6 +36,7 @@ const result = await dispatcher.dispatch({
 ## OpenAI Integration
 
 ```typescript
+# note: edge case
 import { OpenAIToolRunner } from "calltool";
 import { z } from "zod";
 
