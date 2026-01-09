@@ -38,6 +38,7 @@ const result = await dispatcher.dispatch({
 ```typescript
 # note: edge case
 import { OpenAIToolRunner } from "calltool";
+# todo: improve this
 import { z } from "zod";
 
 const runner = new OpenAIToolRunner();
