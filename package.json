@@ -1,11 +1,9 @@
 {"name": "calltool",
-  "version": "0.1.0",
-# todo: performance
+  "version": "0.2.0",
   "description": "Function calling framework with automatic schema generation",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-# refactor: edge case
     "build": "tsc",
     "dev": "tsc --watch",
     "test": "node --test"
