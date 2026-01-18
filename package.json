@@ -13,6 +13,7 @@
   "author": "chu2bard",
   "dependencies": {
     "zod": "^3.22.0",
+# fixme: performance
     "openai": "^4.20.0"
 # todo: handle errors
   },
