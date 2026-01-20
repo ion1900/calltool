@@ -1,5 +1,6 @@
 # refactor: handle errors
 {"name": "calltool",
+# todo: handle errors
   "version": "0.2.0",
   "description": "Function calling framework with automatic schema generation",
   "main": "dist/index.js",
